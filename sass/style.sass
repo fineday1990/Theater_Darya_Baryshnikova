@@ -154,7 +154,7 @@ $light-lilac: #F2D8FF
         margin-right: 32px
         width: 200px
         height: 60px
-        background: #BD8A44
+        background: #ae6dcf//#c182e1 //#BD8A44
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
         border: none
         border-radius: 100px
@@ -169,6 +169,11 @@ $light-lilac: #F2D8FF
             margin-right: 12px
     &__text
         font-size: 16px
+.buttons__main-btn:hover
+    background-color: #bc56eb
+    box-shadow: 0px 16px 36px 7px rgb(252 223 79)
+    transition: background-color 0.3s ease-in
+    color: #ffffff
 
 .second-section
     position: relative
@@ -299,8 +304,6 @@ $light-lilac: #F2D8FF
         flex-direction: row
         justify-content: center
         margin-bottom: 20px
-    &__title
-        margin-right: 30px
     &__logo
         width: 80px
     &__top-pictures
@@ -342,7 +345,6 @@ $light-lilac: #F2D8FF
     filter: drop-shadow(6px 10px 10px rgba(0, 0, 0, 0.5))
     border-radius: 10px
     margin-right: 20px
-    background-position: center
     &:last-child
         margin-right: 0
 
@@ -530,6 +532,7 @@ form
     .foto-picters
         width: 250px
         height: 250px
+        background-position: center
 
     .footer
         &__title-contacts
@@ -558,7 +561,7 @@ form
             right: -16px
             rotate: 4deg
     .title
-        font-size: 28px
+        font-size: 26px
     .left-wrapper
         img
             width: 424px
@@ -629,6 +632,9 @@ form
 
     .second-section
         min-height: 930px
+        &__title
+            display: flex
+            justify-content: center
         &__cards
             flex-direction: column
             align-items: center
@@ -653,7 +659,7 @@ form
         width: 300px
         height: 300px
         &__text
-            top: -29px
+            top: -34px
             right: 2px
             font-size: 24px
     .icons-item
@@ -676,6 +682,12 @@ form
 
     .four-section
         min-height: 590px
+        &__top-pictures
+            margin-right: 4px
+            margin-left: 4px
+        &__lower-pictures
+            margin-right: 4px
+            margin-left: 4px
         &__foto-two
             display: none
         &__foto-seven
@@ -695,13 +707,12 @@ form
         &__left-box
             justify-content: center
             text-align: center
-            margin-right: 0
-            margin-bottom: 20px
+            margin: 4px 4px 20px 4px
     .footer-buttons
         margin-right: 0
 @media (max-width: 575px)
     .container
-        width: 375px
+        width: 360px
     .main-section__star-small
         top: -131px
         right: 156px
@@ -709,12 +720,15 @@ form
         display: none
     .left-wrapper
         img
-            left: -26px
+            left: -36px
     .right-wrapper
         right: -40px
     .main-logo
         display: none
     .second-section
+        &__title
+            display: flex
+            justify-content: center
         &__icons-box
             display: none
         &__star-first
@@ -722,4 +736,4 @@ form
         &__star-second
             left: 190px
     .third-section
-        min-height: 550px
+        min-height: 570px
