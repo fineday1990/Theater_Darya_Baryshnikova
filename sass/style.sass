@@ -46,15 +46,6 @@ $light-lilac: #F2D8FF
     &__content-container
         display: flex
         flex-direction: row
-    &__first-elipse
-        position: absolute
-        top: 130px
-        right: 68px
-        z-index: 1
-    &__second-elipse
-        position: absolute
-        right: -120px
-        top: 650px
     &__star-small
         position: absolute
         top: -32px
@@ -142,6 +133,10 @@ $light-lilac: #F2D8FF
         &:last-child
             margin-right: 0px
 
+.messenger-icons:hover
+    fill: $light-lilac
+    transition: 0.5s
+
 .title
     font-size: 50px
     font-weight: bold
@@ -151,7 +146,7 @@ $light-lilac: #F2D8FF
     display: flex
     flex-direction: row
     &__main-btn
-        margin-right: 32px
+        margin-bottom: 10px
         width: 200px
         height: 60px
         background: #ae6dcf//#c182e1 //#BD8A44
@@ -170,10 +165,12 @@ $light-lilac: #F2D8FF
     &__text
         font-size: 16px
 .buttons__main-btn:hover
-    background-color: #bc56eb
-    box-shadow: 0px 16px 36px 7px rgb(252 223 79)
-    transition: background-color 0.3s ease-in
+    background-color: $lilac
+    box-shadow: 0px 16px 36px 7px rgb(132 37 176)
+    transition: background-color 1s ease-in
     color: #ffffff
+.buttons__main-btn:active
+    transform: scale(0.96)
 
 .second-section
     position: relative
@@ -486,7 +483,6 @@ form
     .main-logo
         width: 300px
     .buttons__main-btn
-        margin-right: 24px
         width: 170px
         height: 50px
         font-size: 16px
@@ -713,6 +709,12 @@ form
 @media (max-width: 575px)
     .container
         width: 360px
+    .title
+        font-size: 22px
+    .buttons__main-btn
+        width: 160px
+        height: 44px
+        font-size: 14px
     .main-section__star-small
         top: -131px
         right: 156px
@@ -722,7 +724,7 @@ form
         img
             left: -36px
     .right-wrapper
-        right: -40px
+        right: -54px
     .main-logo
         display: none
     .second-section
@@ -735,5 +737,7 @@ form
             right: 200px
         &__star-second
             left: 190px
+    .cards-item__text
+        font-size: 20px
     .third-section
         min-height: 570px
