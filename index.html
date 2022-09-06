@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/sweetalert.min.css" />
         <title>Театральная школа Новочебоксарск</title>
         <meta name="description" content="Театральная школа Новочебоксарск" />
         <link
@@ -444,6 +445,70 @@
             </div>
         </section>
 
+        <section class="five-section">
+            <div class="container form">
+                <form id="form" class="form__body">
+                    <h5 class="form__title title">
+                        Отправьте заявку и мы запишем Вас!
+                    </h5>
+                    <div class="form__item">
+                        <label for="formName" class="form__label">Имя*:</label>
+                        <input
+                            id="formName"
+                            type="text"
+                            name="name"
+                            class="form__input"
+                        />
+                    </div>
+                    <div class="form__item">
+                        <label for="formPhone" class="form__label"
+                            >Номер тел*:</label
+                        >
+                        <input
+                            id="formPhone"
+                            type="tel"
+                            name="phone"
+                            class="form__input"
+                        />
+                    </div>
+                    <div class="form__item">
+                        <label for="formMessage" class="form__label"
+                            >Сообщение:</label
+                        >
+                        <textarea
+                            id="formMessage"
+                            name="message"
+                            class="form__input message"
+                        ></textarea>
+                    </div>
+                    <div class="form__item">
+                        <div class="checkbox">
+                            <input
+                                id="formAgreement"
+                                checked
+                                type="checkbox"
+                                name="agreement"
+                                class="checkbox__input"
+                            />
+                            <label for="formAgreement" class="checkbox__label"
+                                ><span
+                                    >Я даю свое согласие на обработку
+                                    персональных данных в соответствии с
+                                    <a href="">Условиями</a>*</span
+                                ></label
+                            >
+                        </div>
+                    </div>
+                    <button
+                        type="submit"
+                        class="form__button buttons__main-btn"
+                    >
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </section>
+
         <footer id="contacts" class="footer" id="form">
             <div class="container footer__title">
                 <h5 class="footer__title title">Контакты</h5>
@@ -578,7 +643,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer__right-box">
+                <!-- <div class="footer__right-box">
                     <form>
                         <div class="footer__form-group">
                             <label for="name">Ваше имя</label>
@@ -605,13 +670,7 @@
                             />
                         </div>
                     </form>
-                </div>
-            </div>
-            <div class="footer-button">
-                <button type="submit" class="buttons__main-btn footer-buttons">
-                    Записаться <br />
-                    в группу
-                </button>
+                </div> -->
             </div>
             <div class="footer__footer-hashtag">
                 <h6 class="footer-hashtag">
@@ -622,5 +681,8 @@
         </footer>
 
         <script src="js/script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/sweetalert.min.js"></script>
+        <script src="js/form.js"></script>
     </body>
 </html>

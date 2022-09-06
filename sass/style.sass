@@ -146,6 +146,10 @@ $light-lilac: #F2D8FF
     display: flex
     flex-direction: row
     &__main-btn
+        display: flex
+        justify-content: center
+        align-items: center
+        min-height: 60px
         margin-bottom: 10px
         width: 200px
         height: 60px
@@ -157,11 +161,11 @@ $light-lilac: #F2D8FF
         color: white
         font-weight: bold
         cursor: pointer
-    &__icon-btn
-        display: inline-flex
-        align-items: center
-        img
-            margin-right: 12px
+    // &__icon-btn
+    //     display: inline-flex
+    //     align-items: center
+    //     img
+    //         margin-right: 12px
     &__text
         font-size: 16px
 .buttons__main-btn:hover
@@ -345,6 +349,70 @@ $light-lilac: #F2D8FF
     &:last-child
         margin-right: 0
 
+.form
+    max-width: 550px
+    margin: 0px auto
+    padding: 30px 0
+    outline: none
+
+    &__title
+        margin-bottom: 30px
+    &__item
+        margin-bottom: 20px
+    &__label
+        font-size: 18px
+        font-weight: 600
+        display: block
+        margin-bottom: 10px
+    &__input
+        height: 50px
+        padding: 0px 20px
+        border-radius: 5px
+        width: 100%
+        font-size: 18px
+        &:focus
+            box-shadow: 0 0 15px $lilac
+.message
+    min-height: 120px
+    resize: vertical
+    padding: 20px
+
+.checkbox
+    &__input
+        display: none
+        &:checked + .checkbox__label::after
+            transform: scale(1)
+
+    &__label
+        position: relative
+        font-size: 16px
+        line-height: 140%
+        display: inline-flex
+        align-items: center
+        cursor: pointer
+    &__label::before
+        content: ""
+        align-self: flex-start
+        flex: 0 0 24px
+        height: 24px
+        background-color: grey
+        border-radius: 4px
+        margin: 0 10px 0 0
+    &__label::after
+        transition: transform 0.5s ease 0s
+        content: ""
+        width: 16px
+        height: 16px
+        position: absolute
+        top: 4px
+        left: 4px
+        background-color: #8425B0
+        border-radius: 4px
+        transform: scale(0)
+
+.form__button
+    width: 100%
+
 .footer
     min-height: 536px
     background: linear-gradient(180deg, #FFFFFF 0%, $color-fon 19.16%)
@@ -355,22 +423,7 @@ $light-lilac: #F2D8FF
         justify-content: center
         padding-top: 36px
         margin-bottom: 20px
-    &__form-group
-        display: flex
-        flex-direction: column
-        text-align: left
-        label
-            font-size: 18px
-            font-weight: 600
-            margin-bottom: 15px
-        input
-            font-size: 18px
-            color: black
-            height: 60px
-            padding: 0px 20px
-            border-radius: 15px
-            border: none
-            margin-bottom: 18px
+
     &__title
         display: flex
         justify-content: center
@@ -391,12 +444,6 @@ $light-lilac: #F2D8FF
         justify-content: center
 .footer-box
     margin-bottom: 26px
-.footer-button
-    display: flex
-    justify-content: center
-    margin-bottom: 30px
-form
-    min-width: 300px
 
 @media (max-width: 1199px)
     .container
@@ -545,6 +592,7 @@ form
         margin-left: 20px
     .footer-box
         margin-bottom: 16px
+
 @media (max-width: 767px)
     .container
         width: 540px
@@ -704,8 +752,6 @@ form
             justify-content: center
             text-align: center
             margin: 4px 4px 20px 4px
-    .footer-buttons
-        margin-right: 0
 @media (max-width: 575px)
     .container
         width: 360px
