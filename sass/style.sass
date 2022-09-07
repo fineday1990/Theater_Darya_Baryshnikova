@@ -64,6 +64,8 @@ $light-lilac: #F2D8FF
         a
             text-decoration: none
             color: black
+        a:hover
+            color: $lilac
 
 .left-wrapper
     position: relative
@@ -135,7 +137,7 @@ $light-lilac: #F2D8FF
 
 .messenger-icons:hover
     fill: $light-lilac
-    transition: 0.5s
+    transition: 0.3s
 
 .title
     font-size: 50px
@@ -349,6 +351,24 @@ $light-lilac: #F2D8FF
     &:last-child
         margin-right: 0
 
+.five-section
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        top: 18px
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgba(50,50,50,0.7) url("../img/loading.gif") center /50px no-repeat
+        opacity: 0
+        visibility: hidden
+        transition: all 0.3s ease 0s
+._sending::after
+    opacity: 1
+    visibility: visible
+
+// _sending
 .form
     max-width: 550px
     margin: 0px auto
@@ -357,6 +377,7 @@ $light-lilac: #F2D8FF
 
     &__title
         margin-bottom: 30px
+        text-align: center
     &__item
         margin-bottom: 20px
     &__label
@@ -372,12 +393,18 @@ $light-lilac: #F2D8FF
         font-size: 18px
         &:focus
             box-shadow: 0 0 15px $lilac
+        &._error
+            box-shadow: 0 0 15px red
+
 .message
     min-height: 120px
     resize: vertical
     padding: 20px
 
 .checkbox
+    &._error
+        .checkbox__label::before
+            box-shadow: 0 0 15px red
     &__input
         display: none
         &:checked + .checkbox__label::after
@@ -414,26 +441,26 @@ $light-lilac: #F2D8FF
     width: 100%
 
 .footer
-    min-height: 536px
+    min-height: 420px
     background: linear-gradient(180deg, #FFFFFF 0%, $color-fon 19.16%)
+    padding-top: 20px
     padding-bottom: 20px
     &__container
         display: flex
         flex-direction: row
         justify-content: center
-        padding-top: 36px
+        padding-top: 10px
         margin-bottom: 20px
 
     &__title
         display: flex
         justify-content: center
-        margin-bottom: 16px
+        margin-bottom: 6px
     &__left-box
         display: flex
         flex-direction: column
         justify-content: center
-        text-align: start
-        margin-right: 36px
+        text-align: center
     &__title-contacts
         font-size: 18px
         font-weight: bold
@@ -443,7 +470,7 @@ $light-lilac: #F2D8FF
         flex-direction: row
         justify-content: center
 .footer-box
-    margin-bottom: 26px
+    margin-bottom: 16px
 
 @media (max-width: 1199px)
     .container
@@ -498,7 +525,7 @@ $light-lilac: #F2D8FF
         width: 310px
         height: 310px
     .four-section
-        min-height: 1060px
+        min-height: 1040px
 @media (max-width: 991px)
     .container
         width: 720px
@@ -506,6 +533,7 @@ $light-lilac: #F2D8FF
         min-height: 626px
     .title
         font-size: 36px
+        text-align: center
     .left-wrapper
         img
             width: 500px
@@ -530,8 +558,6 @@ $light-lilac: #F2D8FF
     .main-logo
         width: 300px
     .buttons__main-btn
-        width: 170px
-        height: 50px
         font-size: 16px
     .buttons__text
         font-size: 14px
@@ -569,7 +595,7 @@ $light-lilac: #F2D8FF
             padding-left: 24px
             padding-top: 38px
     .four-section
-        min-height: 660px
+        min-height: 630px
         &__foto-four
             display: none
     .foto-picters
@@ -745,7 +771,7 @@ $light-lilac: #F2D8FF
         height: 240px
 
     .footer
-        min-height: 480px
+        min-height: 460px
         form
             display: none
         &__left-box
@@ -757,10 +783,10 @@ $light-lilac: #F2D8FF
         width: 360px
     .title
         font-size: 22px
-    .buttons__main-btn
-        width: 160px
-        height: 44px
-        font-size: 14px
+    // .buttons__main-btn
+    //     width: 160px
+    //     height: 44px
+    //     font-size: 14px
     .main-section__star-small
         top: -131px
         right: 156px
@@ -787,3 +813,8 @@ $light-lilac: #F2D8FF
         font-size: 20px
     .third-section
         min-height: 570px
+    .form__body
+        margin-right: 10px
+        margin-left: 10px
+    .buttons__main-btn
+        margin-bottom: 16px

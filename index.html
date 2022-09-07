@@ -5,7 +5,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/sweetalert.min.css" />
         <title>Театральная школа Новочебоксарск</title>
         <meta name="description" content="Театральная школа Новочебоксарск" />
         <link
@@ -117,7 +116,7 @@
                 <!--левая часть первой секции-->
                 <div class="left-wrapper">
                     <img
-                        src="img/главное фото.png"
+                        src="img/first_foto.png"
                         alt="фото"
                         class="left_left-box__img"
                     />
@@ -129,7 +128,7 @@
                 <div class="right-wrapper">
                     <!--иконки соц сетей-->
                     <div class="right-wrapper__icons-box icons">
-                        <div class="icons__item instagram">
+                        <!-- <div class="icons__item instagram">
                             <a
                                 href="https://instagram.com/teatr.school.novocheboksarsk?igshid=YmMyMTA2M2Y="
                                 target="_blank"
@@ -172,7 +171,7 @@
                                     </defs>
                                 </svg>
                             </a>
-                        </div>
+                        </div> -->
                         <div class="icons__item icons-vk">
                             <a
                                 href="https://vk.com/public211205931"
@@ -253,7 +252,7 @@
                     <div class="right-wrapper__logo">
                         <img
                             class="main-logo"
-                            src="img/логотип_желание.png"
+                            src="img/logo-star.png"
                             alt="logo"
                         />
                     </div>
@@ -305,7 +304,7 @@
                         <p class="cards-item__text">12 +</p>
                         <img
                             class="second-section__foto"
-                            src="img/12+ лет.png"
+                            src="img/12.png"
                             alt="foto"
                         />
                     </div>
@@ -446,8 +445,8 @@
         </section>
 
         <section class="five-section">
-            <div class="container form">
-                <form id="form" class="form__body">
+            <div class="form">
+                <form action="#" id="form" class="form__body">
                     <h5 class="form__title title">
                         Отправьте заявку и мы запишем Вас!
                     </h5>
@@ -457,18 +456,18 @@
                             id="formName"
                             type="text"
                             name="name"
-                            class="form__input"
+                            class="form__input _req"
                         />
                     </div>
                     <div class="form__item">
-                        <label for="formPhone" class="form__label"
-                            >Номер тел*:</label
+                        <label for="formEmail" class="form__label"
+                            >email*:</label
                         >
                         <input
-                            id="formPhone"
-                            type="tel"
-                            name="phone"
-                            class="form__input"
+                            id="formEmail"
+                            type="email"
+                            name="email"
+                            class="form__input _req _email"
                         />
                     </div>
                     <div class="form__item">
@@ -488,7 +487,7 @@
                                 checked
                                 type="checkbox"
                                 name="agreement"
-                                class="checkbox__input"
+                                class="checkbox__input _req"
                             />
                             <label for="formAgreement" class="checkbox__label"
                                 ><span
@@ -509,7 +508,7 @@
             </div>
         </section>
 
-        <footer id="contacts" class="footer" id="form">
+        <footer id="contacts" class="footer">
             <div class="container footer__title">
                 <h5 class="footer__title title">Контакты</h5>
             </div>
@@ -536,7 +535,7 @@
                         </p>
                     </div>
                     <div class="footer__icons-box icons">
-                        <div class="icons__item instagram">
+                        <!-- <div class="icons__item instagram">
                             <a
                                 href="https://instagram.com/teatr.school.novocheboksarsk?igshid=YmMyMTA2M2Y="
                                 target="_blank"
@@ -579,7 +578,7 @@
                                     </defs>
                                 </svg>
                             </a>
-                        </div>
+                        </div> -->
                         <div class="icons__item icons-vk">
                             <a
                                 href="https://vk.com/public211205931"
@@ -643,34 +642,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="footer__right-box">
-                    <form>
-                        <div class="footer__form-group">
-                            <label for="name">Ваше имя</label>
-                            <input
-                                type="text"
-                                placeholder="Введите имя"
-                                id="name"
-                            />
-                        </div>
-                        <div class="footer__form-group">
-                            <label for="phone">Номер телефона</label>
-                            <input
-                                type="tel"
-                                placeholder="7 (999) 999-99-99"
-                                id="phone"
-                            />
-                        </div>
-                        <div class="footer__form-group">
-                            <label for="email">Электронный адрес</label>
-                            <input
-                                type="email"
-                                placeholder="***@yandex.ru"
-                                id="email"
-                            />
-                        </div>
-                    </form>
-                </div> -->
             </div>
             <div class="footer__footer-hashtag">
                 <h6 class="footer-hashtag">
@@ -679,10 +650,6 @@
                 </h6>
             </div>
         </footer>
-
         <script src="js/script.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="js/sweetalert.min.js"></script>
-        <script src="js/form.js"></script>
     </body>
 </html>
