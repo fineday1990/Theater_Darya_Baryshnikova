@@ -76,7 +76,6 @@
             sizes="16x16"
             href="icons/favicons/favicon-16x16.png"
         />
-        <link rel="manifest" href="icons/favicons/manifest.json" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta
             name="msapplication-TileImage"
@@ -236,7 +235,7 @@
                         <p class="cards-item__text">5-7 лет</p>
                         <img
                             class="second-section__foto"
-                            src="img/5_7 лет.png"
+                            src="img/5_7.png"
                             alt="foto"
                         />
                     </div>
@@ -244,7 +243,7 @@
                         <p class="cards-item__text">8-10 лет</p>
                         <img
                             class="second-section__foto"
-                            src="img/8_10 лет.png"
+                            src="img/8_10.png"
                             alt="foto"
                         />
                     </div>
@@ -391,7 +390,12 @@
         <!-- пятая секция форма -->
         <section class="five-section">
             <div class="form">
-                <form action="#" id="form" class="form__body">
+                <form
+                    action="sandmail.php"
+                    method="POST"
+                    id="form"
+                    class="form__body"
+                >
                     <h5 class="form__title title">
                         Отправьте заявку и мы запишем Вас!
                     </h5>
@@ -401,7 +405,9 @@
                             id="formName"
                             type="text"
                             name="name"
+                            placeholder="Имя"
                             class="form__input _req"
+                            maxlength="40"
                         />
                     </div>
                     <div class="form__item">
@@ -412,7 +418,9 @@
                             id="formEmail"
                             type="email"
                             name="email"
+                            placeholder="Email"
                             class="form__input _req _email"
+                            maxlength="40"
                         />
                     </div>
                     <div class="form__item">
@@ -422,7 +430,9 @@
                         <textarea
                             id="formMessage"
                             name="message"
+                            placeholder="Cообщение"
                             class="form__input message"
+                            maxlength="200"
                         ></textarea>
                     </div>
                     <div class="form__item">
