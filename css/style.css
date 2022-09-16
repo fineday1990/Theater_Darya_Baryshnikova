@@ -366,13 +366,13 @@ table {
 }
 
 @font-face {
-  font-family: "MontserratT";
+  font-family: "MontserratT", sans-serif;
   src: url("../fonts/Montserrat-Regular.ttf");
   font-weight: regular;
   font-style: normal;
 }
 @font-face {
-  font-family: "MontserratT";
+  font-family: "MontserratT", sans-serif;
   src: url("../fonts/Montserrat-SemiBold.ttf");
   font-weight: bold;
   font-style: normal;
@@ -529,7 +529,6 @@ html {
 
 .buttons {
   display: flex;
-  flex-direction: row;
 }
 .buttons__main-btn {
   display: flex;
@@ -589,18 +588,6 @@ html {
 .second-section__icons-box {
   display: flex;
   justify-content: space-evenly;
-}
-.second-section__first-elipse {
-  position: absolute;
-  top: 54px;
-  right: -54px;
-  z-index: -1;
-}
-.second-section__second-elipse {
-  position: absolute;
-  top: 350px;
-  left: -80px;
-  z-index: -1;
 }
 .second-section__foto {
   width: 360px;
@@ -688,22 +675,11 @@ html {
   font-size: 18px;
   margin-bottom: 30px;
 }
-.third-section__first-elipse {
-  position: absolute;
-  top: 140px;
-  left: 110px;
-  z-index: -1;
-}
 .third-section__figure {
   position: absolute;
   top: 56px;
   left: 2px;
   z-index: -1;
-}
-.third-section__second-elipse {
-  position: absolute;
-  right: -120px;
-  top: -120px;
 }
 .third-section__li {
   list-style-type: disc;

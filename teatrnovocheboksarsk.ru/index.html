@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/sweetalert.min.css" />
         <link rel="stylesheet" href="css/style.css" />
         <title>Театральная школа Новочебоксарск</title>
         <meta name="description" content="Театральная школа Новочебоксарск" />
@@ -390,12 +391,7 @@
         <!-- пятая секция форма -->
         <section class="five-section">
             <div class="form">
-                <form
-                    action="sandmail.php"
-                    method="POST"
-                    id="form"
-                    class="form__body"
-                >
+                <form id="form" class="form__body">
                     <h5 class="form__title title">
                         Отправьте заявку и мы запишем Вас!
                     </h5>
@@ -411,15 +407,28 @@
                         />
                     </div>
                     <div class="form__item">
+                        <label for="formPhone" class="form__label"
+                            >Номер телефона*:</label
+                        >
+                        <input
+                            id="formPhone"
+                            type="tel"
+                            name="phone"
+                            placeholder="Введите номер телефона"
+                            class="form__input _req"
+                            maxlength="40"
+                        />
+                    </div>
+                    <div class="form__item">
                         <label for="formEmail" class="form__label"
-                            >email*:</label
+                            >Email:</label
                         >
                         <input
                             id="formEmail"
-                            type="email"
+                            type="text"
                             name="email"
                             placeholder="Email"
-                            class="form__input _req _email"
+                            class="form__input"
                             maxlength="40"
                         />
                     </div>
@@ -430,7 +439,7 @@
                         <textarea
                             id="formMessage"
                             name="message"
-                            placeholder="Cообщение"
+                            placeholder="Ваш вопрос"
                             class="form__input message"
                             maxlength="200"
                         ></textarea>
@@ -561,6 +570,10 @@
                 </h6>
             </div>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="js/sweetalert.min.js"></script>
+        <script src="js/form.js"></script>
+        <script src="https://unpkg.com/imask"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
